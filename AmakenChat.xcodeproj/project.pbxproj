@@ -1,0 +1,845 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19858CEB1DEE81FD003CEC08 /* ACDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 19858CEA1DEE81FD003CEC08 /* ACDataHelper.m */; };
+		19858CF01DEE95F1003CEC08 /* ACUserCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19858CEF1DEE95F1003CEC08 /* ACUserCardTableViewCell.m */; };
+		19858CF31DEEA5BF003CEC08 /* ACImageSlidingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19858CF21DEEA5BF003CEC08 /* ACImageSlidingCollectionViewCell.m */; };
+		19A449C81DED5FCD004E72D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A449C71DED5FCD004E72D0 /* main.m */; };
+		19A449F01DED60D3004E72D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A449DF1DED60D3004E72D0 /* AppDelegate.m */; };
+		19A449F11DED60D3004E72D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19A449E11DED60D3004E72D0 /* Assets.xcassets */; };
+		19A449F21DED60D3004E72D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A449E51DED60D3004E72D0 /* LaunchScreen.storyboard */; };
+		19A449F31DED60D3004E72D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A449E71DED60D3004E72D0 /* Main.storyboard */; };
+		19A449F41DED60D3004E72D0 /* MTHandleKeyBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A449EC1DED60D3004E72D0 /* MTHandleKeyBoardViewController.m */; };
+		19A449FC1DED6BE7004E72D0 /* SOAPEngine64.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A449FB1DED6BE6004E72D0 /* SOAPEngine64.framework */; };
+		19A44A021DED6C50004E72D0 /* ACNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A44A011DED6C50004E72D0 /* ACNetworkHelper.m */; };
+		19A44A061DED6DB2004E72D0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A44A051DED6DB2004E72D0 /* Security.framework */; };
+		19A44A081DED6DEE004E72D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A44A071DED6DEE004E72D0 /* Foundation.framework */; };
+		19A44A0A1DED6DF8004E72D0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A44A091DED6DF8004E72D0 /* CoreGraphics.framework */; };
+		19A44A0C1DED6E1B004E72D0 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A44A0B1DED6E1B004E72D0 /* libxml2.tbd */; };
+		19A44A111DED7441004E72D0 /* ACHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A44A101DED7441004E72D0 /* ACHelper.m */; };
+		19A44A1B1DED851C004E72D0 /* UIColor+ACUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A44A1A1DED851C004E72D0 /* UIColor+ACUtils.m */; };
+		19A44A1E1DED89C3004E72D0 /* ACButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A44A1D1DED89C3004E72D0 /* ACButton.m */; };
+		19A44A211DED89D5004E72D0 /* ACImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A44A201DED89D5004E72D0 /* ACImageView.m */; };
+		19A44A241DED89E1004E72D0 /* ACLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A44A231DED89E1004E72D0 /* ACLabel.m */; };
+		19A44A271DED8E3E004E72D0 /* ACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A44A261DED8E3E004E72D0 /* ACViewController.m */; };
+		19A44A2B1DED8E4F004E72D0 /* ACAmakenChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A44A2A1DED8E4F004E72D0 /* ACAmakenChatViewController.m */; };
+		19A44A2E1DED93E3004E72D0 /* ACChatCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A44A2D1DED93E3004E72D0 /* ACChatCardTableViewCell.m */; };
+		19A44A311DED93F1004E72D0 /* ACWelcomeCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A44A301DED93F1004E72D0 /* ACWelcomeCardTableViewCell.m */; };
+		19A44A341DED95B1004E72D0 /* ACPromotionalCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A44A331DED95B1004E72D0 /* ACPromotionalCardTableViewCell.m */; };
+		19A44A431DEDAF39004E72D0 /* ACChatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A44A421DEDAF39004E72D0 /* ACChatHelper.m */; };
+		19A44AA71DEDB893004E72D0 /* AmakenChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19A44AA51DEDB893004E72D0 /* AmakenChat.xcdatamodeld */; };
+		85059FDA1DEDC0D500EFE249 /* ACUserCardEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 85059FC71DEDC0D500EFE249 /* ACUserCardEntity+CoreDataClass.m */; };
+		85059FDB1DEDC0D500EFE249 /* ACUserCardEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85059FC91DEDC0D500EFE249 /* ACUserCardEntity+CoreDataProperties.m */; };
+		85059FDC1DEDC0D500EFE249 /* ACWelcomeCardEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 85059FCB1DEDC0D500EFE249 /* ACWelcomeCardEntity+CoreDataClass.m */; };
+		85059FDD1DEDC0D500EFE249 /* ACWelcomeCardEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85059FCD1DEDC0D500EFE249 /* ACWelcomeCardEntity+CoreDataProperties.m */; };
+		85059FDE1DEDC0D500EFE249 /* ACContentEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 85059FCF1DEDC0D500EFE249 /* ACContentEntity+CoreDataClass.m */; };
+		85059FDF1DEDC0D500EFE249 /* ACContentEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85059FD11DEDC0D500EFE249 /* ACContentEntity+CoreDataProperties.m */; };
+		85059FE01DEDC0D500EFE249 /* ACPromotionCardEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 85059FD31DEDC0D500EFE249 /* ACPromotionCardEntity+CoreDataClass.m */; };
+		85059FE11DEDC0D500EFE249 /* ACPromotionCardEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85059FD51DEDC0D500EFE249 /* ACPromotionCardEntity+CoreDataProperties.m */; };
+		85059FE21DEDC0D500EFE249 /* ACCardEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 85059FD71DEDC0D500EFE249 /* ACCardEntity+CoreDataClass.m */; };
+		85059FE31DEDC0D500EFE249 /* ACCardEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85059FD91DEDC0D500EFE249 /* ACCardEntity+CoreDataProperties.m */; };
+		C5901E70461A5E90AB619F96 /* libPods-AmakenChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 932EE1084BF00C7E12B6ED63 /* libPods-AmakenChat.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1217E489C0DF35BC168F2D55 /* Pods-AmakenChat.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmakenChat.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-AmakenChat/Pods-AmakenChat.distribution.xcconfig"; sourceTree = "<group>"; };
+		19858CE91DEE81FD003CEC08 /* ACDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDataHelper.h; sourceTree = "<group>"; };
+		19858CEA1DEE81FD003CEC08 /* ACDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACDataHelper.m; sourceTree = "<group>"; };
+		19858CEE1DEE95F1003CEC08 /* ACUserCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACUserCardTableViewCell.h; sourceTree = "<group>"; };
+		19858CEF1DEE95F1003CEC08 /* ACUserCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACUserCardTableViewCell.m; sourceTree = "<group>"; };
+		19858CF11DEEA5BF003CEC08 /* ACImageSlidingCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACImageSlidingCollectionViewCell.h; sourceTree = "<group>"; };
+		19858CF21DEEA5BF003CEC08 /* ACImageSlidingCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACImageSlidingCollectionViewCell.m; sourceTree = "<group>"; };
+		19A449C31DED5FCD004E72D0 /* AmakenChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmakenChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19A449C71DED5FCD004E72D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19A449D71DED5FCD004E72D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19A449DE1DED60D3004E72D0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		19A449DF1DED60D3004E72D0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		19A449E11DED60D3004E72D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19A449E61DED60D3004E72D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19A449E81DED60D3004E72D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19A449EB1DED60D3004E72D0 /* MTHandleKeyBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTHandleKeyBoardViewController.h; sourceTree = "<group>"; };
+		19A449EC1DED60D3004E72D0 /* MTHandleKeyBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTHandleKeyBoardViewController.m; sourceTree = "<group>"; };
+		19A449FB1DED6BE6004E72D0 /* SOAPEngine64.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SOAPEngine64.framework; sourceTree = "<group>"; };
+		19A44A001DED6C50004E72D0 /* ACNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACNetworkHelper.h; sourceTree = "<group>"; };
+		19A44A011DED6C50004E72D0 /* ACNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACNetworkHelper.m; sourceTree = "<group>"; };
+		19A44A031DED6C5F004E72D0 /* ACConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACConstant.h; sourceTree = "<group>"; };
+		19A44A051DED6DB2004E72D0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		19A44A071DED6DEE004E72D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		19A44A091DED6DF8004E72D0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		19A44A0B1DED6E1B004E72D0 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		19A44A0F1DED7441004E72D0 /* ACHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACHelper.h; sourceTree = "<group>"; };
+		19A44A101DED7441004E72D0 /* ACHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACHelper.m; sourceTree = "<group>"; };
+		19A44A191DED851C004E72D0 /* UIColor+ACUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ACUtils.h"; sourceTree = "<group>"; };
+		19A44A1A1DED851C004E72D0 /* UIColor+ACUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ACUtils.m"; sourceTree = "<group>"; };
+		19A44A1C1DED89C3004E72D0 /* ACButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACButton.h; sourceTree = "<group>"; };
+		19A44A1D1DED89C3004E72D0 /* ACButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACButton.m; sourceTree = "<group>"; };
+		19A44A1F1DED89D5004E72D0 /* ACImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACImageView.h; sourceTree = "<group>"; };
+		19A44A201DED89D5004E72D0 /* ACImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACImageView.m; sourceTree = "<group>"; };
+		19A44A221DED89E1004E72D0 /* ACLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACLabel.h; sourceTree = "<group>"; };
+		19A44A231DED89E1004E72D0 /* ACLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACLabel.m; sourceTree = "<group>"; };
+		19A44A251DED8E3E004E72D0 /* ACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACViewController.h; sourceTree = "<group>"; };
+		19A44A261DED8E3E004E72D0 /* ACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACViewController.m; sourceTree = "<group>"; };
+		19A44A291DED8E4F004E72D0 /* ACAmakenChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACAmakenChatViewController.h; sourceTree = "<group>"; };
+		19A44A2A1DED8E4F004E72D0 /* ACAmakenChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACAmakenChatViewController.m; sourceTree = "<group>"; };
+		19A44A2C1DED93E3004E72D0 /* ACChatCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACChatCardTableViewCell.h; sourceTree = "<group>"; };
+		19A44A2D1DED93E3004E72D0 /* ACChatCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACChatCardTableViewCell.m; sourceTree = "<group>"; };
+		19A44A2F1DED93F0004E72D0 /* ACWelcomeCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACWelcomeCardTableViewCell.h; sourceTree = "<group>"; };
+		19A44A301DED93F1004E72D0 /* ACWelcomeCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACWelcomeCardTableViewCell.m; sourceTree = "<group>"; };
+		19A44A321DED95B1004E72D0 /* ACPromotionalCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPromotionalCardTableViewCell.h; sourceTree = "<group>"; };
+		19A44A331DED95B1004E72D0 /* ACPromotionalCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACPromotionalCardTableViewCell.m; sourceTree = "<group>"; };
+		19A44A411DEDAF39004E72D0 /* ACChatHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACChatHelper.h; sourceTree = "<group>"; };
+		19A44A421DEDAF39004E72D0 /* ACChatHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACChatHelper.m; sourceTree = "<group>"; };
+		19A44AA61DEDB893004E72D0 /* AmakenChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AmakenChat.xcdatamodel; sourceTree = "<group>"; };
+		41304699E7388625DAD861C2 /* Pods-AmakenChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmakenChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmakenChat/Pods-AmakenChat.debug.xcconfig"; sourceTree = "<group>"; };
+		760E472B5C8BF52B8BE82210 /* Pods-AmakenChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmakenChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmakenChat/Pods-AmakenChat.release.xcconfig"; sourceTree = "<group>"; };
+		85059FC61DEDC0D500EFE249 /* ACUserCardEntity+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ACUserCardEntity+CoreDataClass.h"; sourceTree = "<group>"; };
+		85059FC71DEDC0D500EFE249 /* ACUserCardEntity+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ACUserCardEntity+CoreDataClass.m"; sourceTree = "<group>"; };
+		85059FC81DEDC0D500EFE249 /* ACUserCardEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ACUserCardEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		85059FC91DEDC0D500EFE249 /* ACUserCardEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ACUserCardEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		85059FCA1DEDC0D500EFE249 /* ACWelcomeCardEntity+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ACWelcomeCardEntity+CoreDataClass.h"; sourceTree = "<group>"; };
+		85059FCB1DEDC0D500EFE249 /* ACWelcomeCardEntity+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ACWelcomeCardEntity+CoreDataClass.m"; sourceTree = "<group>"; };
+		85059FCC1DEDC0D500EFE249 /* ACWelcomeCardEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ACWelcomeCardEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		85059FCD1DEDC0D500EFE249 /* ACWelcomeCardEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ACWelcomeCardEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		85059FCE1DEDC0D500EFE249 /* ACContentEntity+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ACContentEntity+CoreDataClass.h"; sourceTree = "<group>"; };
+		85059FCF1DEDC0D500EFE249 /* ACContentEntity+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ACContentEntity+CoreDataClass.m"; sourceTree = "<group>"; };
+		85059FD01DEDC0D500EFE249 /* ACContentEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ACContentEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		85059FD11DEDC0D500EFE249 /* ACContentEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ACContentEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		85059FD21DEDC0D500EFE249 /* ACPromotionCardEntity+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ACPromotionCardEntity+CoreDataClass.h"; sourceTree = "<group>"; };
+		85059FD31DEDC0D500EFE249 /* ACPromotionCardEntity+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ACPromotionCardEntity+CoreDataClass.m"; sourceTree = "<group>"; };
+		85059FD41DEDC0D500EFE249 /* ACPromotionCardEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ACPromotionCardEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		85059FD51DEDC0D500EFE249 /* ACPromotionCardEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ACPromotionCardEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		85059FD61DEDC0D500EFE249 /* ACCardEntity+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ACCardEntity+CoreDataClass.h"; sourceTree = "<group>"; };
+		85059FD71DEDC0D500EFE249 /* ACCardEntity+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ACCardEntity+CoreDataClass.m"; sourceTree = "<group>"; };
+		85059FD81DEDC0D500EFE249 /* ACCardEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ACCardEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		85059FD91DEDC0D500EFE249 /* ACCardEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ACCardEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		932EE1084BF00C7E12B6ED63 /* libPods-AmakenChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AmakenChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA074C85553AFFCAD0F2EC3E /* Pods-AmakenChat.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmakenChat.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-AmakenChat/Pods-AmakenChat.adhoc.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19A449C01DED5FCD004E72D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A44A0C1DED6E1B004E72D0 /* libxml2.tbd in Frameworks */,
+				19A44A0A1DED6DF8004E72D0 /* CoreGraphics.framework in Frameworks */,
+				19A44A081DED6DEE004E72D0 /* Foundation.framework in Frameworks */,
+				19A44A061DED6DB2004E72D0 /* Security.framework in Frameworks */,
+				19A449FC1DED6BE7004E72D0 /* SOAPEngine64.framework in Frameworks */,
+				C5901E70461A5E90AB619F96 /* libPods-AmakenChat.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19A449BA1DED5FCD004E72D0 = {
+			isa = PBXGroup;
+			children = (
+				19A449C51DED5FCD004E72D0 /* AmakenChat */,
+				19A449C41DED5FCD004E72D0 /* Products */,
+				19A44A041DED6DB1004E72D0 /* Frameworks */,
+				E6A9BE40D4808630B82B4DBE /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		19A449C41DED5FCD004E72D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19A449C31DED5FCD004E72D0 /* AmakenChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19A449C51DED5FCD004E72D0 /* AmakenChat */ = {
+			isa = PBXGroup;
+			children = (
+				19A44A481DEDB3A6004E72D0 /* DataObjects */,
+				19A44A441DEDB352004E72D0 /* DataModel */,
+				19A44A0D1DED742B004E72D0 /* Categories */,
+				19A449DD1DED60D3004E72D0 /* AppDelegate */,
+				19A449E01DED60D3004E72D0 /* Assets */,
+				19A449E21DED60D3004E72D0 /* CustomClasses */,
+				19A449E31DED60D3004E72D0 /* Shared */,
+				19A449E41DED60D3004E72D0 /* Stroyboard */,
+				19A449E91DED60D3004E72D0 /* SubModules */,
+				19A449ED1DED60D3004E72D0 /* ViewControllers */,
+				19A449D71DED5FCD004E72D0 /* Info.plist */,
+				19A449C61DED5FCD004E72D0 /* Supporting Files */,
+			);
+			path = AmakenChat;
+			sourceTree = "<group>";
+		};
+		19A449C61DED5FCD004E72D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19A449C71DED5FCD004E72D0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19A449DD1DED60D3004E72D0 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				19A449DE1DED60D3004E72D0 /* AppDelegate.h */,
+				19A449DF1DED60D3004E72D0 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		19A449E01DED60D3004E72D0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				19A449E11DED60D3004E72D0 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		19A449E21DED60D3004E72D0 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				19A44A1C1DED89C3004E72D0 /* ACButton.h */,
+				19A44A1D1DED89C3004E72D0 /* ACButton.m */,
+				19A44A1F1DED89D5004E72D0 /* ACImageView.h */,
+				19A44A201DED89D5004E72D0 /* ACImageView.m */,
+				19A44A221DED89E1004E72D0 /* ACLabel.h */,
+				19A44A231DED89E1004E72D0 /* ACLabel.m */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		19A449E31DED60D3004E72D0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				19A44A001DED6C50004E72D0 /* ACNetworkHelper.h */,
+				19A44A011DED6C50004E72D0 /* ACNetworkHelper.m */,
+				19A44A411DEDAF39004E72D0 /* ACChatHelper.h */,
+				19A44A421DEDAF39004E72D0 /* ACChatHelper.m */,
+				19858CE91DEE81FD003CEC08 /* ACDataHelper.h */,
+				19858CEA1DEE81FD003CEC08 /* ACDataHelper.m */,
+				19A44A031DED6C5F004E72D0 /* ACConstant.h */,
+				19A44A0F1DED7441004E72D0 /* ACHelper.h */,
+				19A44A101DED7441004E72D0 /* ACHelper.m */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		19A449E41DED60D3004E72D0 /* Stroyboard */ = {
+			isa = PBXGroup;
+			children = (
+				19A449E51DED60D3004E72D0 /* LaunchScreen.storyboard */,
+				19A449E71DED60D3004E72D0 /* Main.storyboard */,
+			);
+			path = Stroyboard;
+			sourceTree = "<group>";
+		};
+		19A449E91DED60D3004E72D0 /* SubModules */ = {
+			isa = PBXGroup;
+			children = (
+				19A449FA1DED6BE6004E72D0 /* SoapEngine */,
+				19A449EA1DED60D3004E72D0 /* MTHandleKeyboardSource */,
+			);
+			path = SubModules;
+			sourceTree = "<group>";
+		};
+		19A449EA1DED60D3004E72D0 /* MTHandleKeyboardSource */ = {
+			isa = PBXGroup;
+			children = (
+				19A449EB1DED60D3004E72D0 /* MTHandleKeyBoardViewController.h */,
+				19A449EC1DED60D3004E72D0 /* MTHandleKeyBoardViewController.m */,
+			);
+			path = MTHandleKeyboardSource;
+			sourceTree = "<group>";
+		};
+		19A449ED1DED60D3004E72D0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				19A44A281DED8E45004E72D0 /* AmakenChat */,
+				19A44A251DED8E3E004E72D0 /* ACViewController.h */,
+				19A44A261DED8E3E004E72D0 /* ACViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		19A449FA1DED6BE6004E72D0 /* SoapEngine */ = {
+			isa = PBXGroup;
+			children = (
+				19A449FB1DED6BE6004E72D0 /* SOAPEngine64.framework */,
+			);
+			path = SoapEngine;
+			sourceTree = "<group>";
+		};
+		19A44A041DED6DB1004E72D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19A44A0B1DED6E1B004E72D0 /* libxml2.tbd */,
+				19A44A091DED6DF8004E72D0 /* CoreGraphics.framework */,
+				19A44A071DED6DEE004E72D0 /* Foundation.framework */,
+				19A44A051DED6DB2004E72D0 /* Security.framework */,
+				932EE1084BF00C7E12B6ED63 /* libPods-AmakenChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19A44A0D1DED742B004E72D0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				19A44A191DED851C004E72D0 /* UIColor+ACUtils.h */,
+				19A44A1A1DED851C004E72D0 /* UIColor+ACUtils.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		19A44A281DED8E45004E72D0 /* AmakenChat */ = {
+			isa = PBXGroup;
+			children = (
+				19A44A291DED8E4F004E72D0 /* ACAmakenChatViewController.h */,
+				19A44A2A1DED8E4F004E72D0 /* ACAmakenChatViewController.m */,
+				19A44A2F1DED93F0004E72D0 /* ACWelcomeCardTableViewCell.h */,
+				19A44A301DED93F1004E72D0 /* ACWelcomeCardTableViewCell.m */,
+				19A44A321DED95B1004E72D0 /* ACPromotionalCardTableViewCell.h */,
+				19A44A331DED95B1004E72D0 /* ACPromotionalCardTableViewCell.m */,
+				19858CEE1DEE95F1003CEC08 /* ACUserCardTableViewCell.h */,
+				19858CEF1DEE95F1003CEC08 /* ACUserCardTableViewCell.m */,
+				19A44A2C1DED93E3004E72D0 /* ACChatCardTableViewCell.h */,
+				19A44A2D1DED93E3004E72D0 /* ACChatCardTableViewCell.m */,
+				19858CF11DEEA5BF003CEC08 /* ACImageSlidingCollectionViewCell.h */,
+				19858CF21DEEA5BF003CEC08 /* ACImageSlidingCollectionViewCell.m */,
+			);
+			path = AmakenChat;
+			sourceTree = "<group>";
+		};
+		19A44A441DEDB352004E72D0 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				19A44AA51DEDB893004E72D0 /* AmakenChat.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		19A44A481DEDB3A6004E72D0 /* DataObjects */ = {
+			isa = PBXGroup;
+			children = (
+				85059FC61DEDC0D500EFE249 /* ACUserCardEntity+CoreDataClass.h */,
+				85059FC71DEDC0D500EFE249 /* ACUserCardEntity+CoreDataClass.m */,
+				85059FC81DEDC0D500EFE249 /* ACUserCardEntity+CoreDataProperties.h */,
+				85059FC91DEDC0D500EFE249 /* ACUserCardEntity+CoreDataProperties.m */,
+				85059FCA1DEDC0D500EFE249 /* ACWelcomeCardEntity+CoreDataClass.h */,
+				85059FCB1DEDC0D500EFE249 /* ACWelcomeCardEntity+CoreDataClass.m */,
+				85059FCC1DEDC0D500EFE249 /* ACWelcomeCardEntity+CoreDataProperties.h */,
+				85059FCD1DEDC0D500EFE249 /* ACWelcomeCardEntity+CoreDataProperties.m */,
+				85059FCE1DEDC0D500EFE249 /* ACContentEntity+CoreDataClass.h */,
+				85059FCF1DEDC0D500EFE249 /* ACContentEntity+CoreDataClass.m */,
+				85059FD01DEDC0D500EFE249 /* ACContentEntity+CoreDataProperties.h */,
+				85059FD11DEDC0D500EFE249 /* ACContentEntity+CoreDataProperties.m */,
+				85059FD21DEDC0D500EFE249 /* ACPromotionCardEntity+CoreDataClass.h */,
+				85059FD31DEDC0D500EFE249 /* ACPromotionCardEntity+CoreDataClass.m */,
+				85059FD41DEDC0D500EFE249 /* ACPromotionCardEntity+CoreDataProperties.h */,
+				85059FD51DEDC0D500EFE249 /* ACPromotionCardEntity+CoreDataProperties.m */,
+				85059FD61DEDC0D500EFE249 /* ACCardEntity+CoreDataClass.h */,
+				85059FD71DEDC0D500EFE249 /* ACCardEntity+CoreDataClass.m */,
+				85059FD81DEDC0D500EFE249 /* ACCardEntity+CoreDataProperties.h */,
+				85059FD91DEDC0D500EFE249 /* ACCardEntity+CoreDataProperties.m */,
+			);
+			path = DataObjects;
+			sourceTree = "<group>";
+		};
+		E6A9BE40D4808630B82B4DBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41304699E7388625DAD861C2 /* Pods-AmakenChat.debug.xcconfig */,
+				760E472B5C8BF52B8BE82210 /* Pods-AmakenChat.release.xcconfig */,
+				1217E489C0DF35BC168F2D55 /* Pods-AmakenChat.distribution.xcconfig */,
+				BA074C85553AFFCAD0F2EC3E /* Pods-AmakenChat.adhoc.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19A449C21DED5FCD004E72D0 /* AmakenChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19A449DA1DED5FCD004E72D0 /* Build configuration list for PBXNativeTarget "AmakenChat" */;
+			buildPhases = (
+				2F563891FE76841A37A3026F /* [CP] Check Pods Manifest.lock */,
+				19A449BF1DED5FCD004E72D0 /* Sources */,
+				19A449C01DED5FCD004E72D0 /* Frameworks */,
+				19A449C11DED5FCD004E72D0 /* Resources */,
+				726DB435F08097BD7F107DBD /* [CP] Embed Pods Frameworks */,
+				4A88C74D873E789B23B35C7B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmakenChat;
+			productName = AmakenChat;
+			productReference = 19A449C31DED5FCD004E72D0 /* AmakenChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19A449BB1DED5FCD004E72D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AC;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Mallow Technologies Private Limited";
+				TargetAttributes = {
+					19A449C21DED5FCD004E72D0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3RHR7K3FP7;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 19A449BE1DED5FCD004E72D0 /* Build configuration list for PBXProject "AmakenChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19A449BA1DED5FCD004E72D0;
+			productRefGroup = 19A449C41DED5FCD004E72D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19A449C21DED5FCD004E72D0 /* AmakenChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19A449C11DED5FCD004E72D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A449F11DED60D3004E72D0 /* Assets.xcassets in Resources */,
+				19A449F31DED60D3004E72D0 /* Main.storyboard in Resources */,
+				19A449F21DED60D3004E72D0 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F563891FE76841A37A3026F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4A88C74D873E789B23B35C7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmakenChat/Pods-AmakenChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		726DB435F08097BD7F107DBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmakenChat/Pods-AmakenChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19A449BF1DED5FCD004E72D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A44A211DED89D5004E72D0 /* ACImageView.m in Sources */,
+				19A44A431DEDAF39004E72D0 /* ACChatHelper.m in Sources */,
+				85059FDF1DEDC0D500EFE249 /* ACContentEntity+CoreDataProperties.m in Sources */,
+				19A44AA71DEDB893004E72D0 /* AmakenChat.xcdatamodeld in Sources */,
+				19A44A241DED89E1004E72D0 /* ACLabel.m in Sources */,
+				85059FE01DEDC0D500EFE249 /* ACPromotionCardEntity+CoreDataClass.m in Sources */,
+				19A44A1B1DED851C004E72D0 /* UIColor+ACUtils.m in Sources */,
+				85059FE21DEDC0D500EFE249 /* ACCardEntity+CoreDataClass.m in Sources */,
+				19858CEB1DEE81FD003CEC08 /* ACDataHelper.m in Sources */,
+				19A44A341DED95B1004E72D0 /* ACPromotionalCardTableViewCell.m in Sources */,
+				19A44A021DED6C50004E72D0 /* ACNetworkHelper.m in Sources */,
+				19A449F01DED60D3004E72D0 /* AppDelegate.m in Sources */,
+				85059FE11DEDC0D500EFE249 /* ACPromotionCardEntity+CoreDataProperties.m in Sources */,
+				85059FE31DEDC0D500EFE249 /* ACCardEntity+CoreDataProperties.m in Sources */,
+				19A44A311DED93F1004E72D0 /* ACWelcomeCardTableViewCell.m in Sources */,
+				85059FDB1DEDC0D500EFE249 /* ACUserCardEntity+CoreDataProperties.m in Sources */,
+				19A44A1E1DED89C3004E72D0 /* ACButton.m in Sources */,
+				19A44A2B1DED8E4F004E72D0 /* ACAmakenChatViewController.m in Sources */,
+				85059FDE1DEDC0D500EFE249 /* ACContentEntity+CoreDataClass.m in Sources */,
+				19A449F41DED60D3004E72D0 /* MTHandleKeyBoardViewController.m in Sources */,
+				19858CF01DEE95F1003CEC08 /* ACUserCardTableViewCell.m in Sources */,
+				85059FDD1DEDC0D500EFE249 /* ACWelcomeCardEntity+CoreDataProperties.m in Sources */,
+				19A449C81DED5FCD004E72D0 /* main.m in Sources */,
+				19A44A2E1DED93E3004E72D0 /* ACChatCardTableViewCell.m in Sources */,
+				19A44A111DED7441004E72D0 /* ACHelper.m in Sources */,
+				19A44A271DED8E3E004E72D0 /* ACViewController.m in Sources */,
+				85059FDA1DEDC0D500EFE249 /* ACUserCardEntity+CoreDataClass.m in Sources */,
+				85059FDC1DEDC0D500EFE249 /* ACWelcomeCardEntity+CoreDataClass.m in Sources */,
+				19858CF31DEEA5BF003CEC08 /* ACImageSlidingCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		19A449E51DED60D3004E72D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19A449E61DED60D3004E72D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		19A449E71DED60D3004E72D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19A449E81DED60D3004E72D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19A449D81DED5FCD004E72D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		19A449D91DED5FCD004E72D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19A449DB1DED5FCD004E72D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41304699E7388625DAD861C2 /* Pods-AmakenChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mallow Technologies Private Limited (3RHR7K3FP7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mallow Technologies Private Limited (3RHR7K3FP7)";
+				DEVELOPMENT_TEAM = 3RHR7K3FP7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AmakenChat/SubModules/SoapEngine",
+				);
+				INFOPLIST_FILE = AmakenChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallowtech.AmakenChatUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a9019b63-bfe4-4448-b7be-ce563698a8b1";
+				PROVISIONING_PROFILE_SPECIFIER = AmakenChatUI_Adhoc_Profile;
+			};
+			name = Debug;
+		};
+		19A449DC1DED5FCD004E72D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 760E472B5C8BF52B8BE82210 /* Pods-AmakenChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mallow Technologies Private Limited (3RHR7K3FP7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mallow Technologies Private Limited (3RHR7K3FP7)";
+				DEVELOPMENT_TEAM = 3RHR7K3FP7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AmakenChat/SubModules/SoapEngine",
+				);
+				INFOPLIST_FILE = AmakenChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallowtech.AmakenChatUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a9019b63-bfe4-4448-b7be-ce563698a8b1";
+				PROVISIONING_PROFILE_SPECIFIER = AmakenChatUI_Adhoc_Profile;
+			};
+			name = Release;
+		};
+		19A449F61DED612B004E72D0 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Adhoc;
+		};
+		19A449F71DED612B004E72D0 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA074C85553AFFCAD0F2EC3E /* Pods-AmakenChat.adhoc.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mallow Technologies Private Limited (3RHR7K3FP7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mallow Technologies Private Limited (3RHR7K3FP7)";
+				DEVELOPMENT_TEAM = 3RHR7K3FP7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AmakenChat/SubModules/SoapEngine",
+				);
+				INFOPLIST_FILE = AmakenChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallowtech.AmakenChatUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a9019b63-bfe4-4448-b7be-ce563698a8b1";
+				PROVISIONING_PROFILE_SPECIFIER = AmakenChatUI_Adhoc_Profile;
+			};
+			name = Adhoc;
+		};
+		19A449F81DED6131004E72D0 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		19A449F91DED6131004E72D0 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1217E489C0DF35BC168F2D55 /* Pods-AmakenChat.distribution.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mallow Technologies Private Limited (3RHR7K3FP7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mallow Technologies Private Limited (3RHR7K3FP7)";
+				DEVELOPMENT_TEAM = 3RHR7K3FP7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AmakenChat/SubModules/SoapEngine",
+				);
+				INFOPLIST_FILE = AmakenChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallowtech.AmakenChatUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a9019b63-bfe4-4448-b7be-ce563698a8b1";
+				PROVISIONING_PROFILE_SPECIFIER = AmakenChatUI_Adhoc_Profile;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19A449BE1DED5FCD004E72D0 /* Build configuration list for PBXProject "AmakenChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19A449D81DED5FCD004E72D0 /* Debug */,
+				19A449D91DED5FCD004E72D0 /* Release */,
+				19A449F81DED6131004E72D0 /* Distribution */,
+				19A449F61DED612B004E72D0 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19A449DA1DED5FCD004E72D0 /* Build configuration list for PBXNativeTarget "AmakenChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19A449DB1DED5FCD004E72D0 /* Debug */,
+				19A449DC1DED5FCD004E72D0 /* Release */,
+				19A449F91DED6131004E72D0 /* Distribution */,
+				19A449F71DED612B004E72D0 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		19A44AA51DEDB893004E72D0 /* AmakenChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				19A44AA61DEDB893004E72D0 /* AmakenChat.xcdatamodel */,
+			);
+			currentVersion = 19A44AA61DEDB893004E72D0 /* AmakenChat.xcdatamodel */;
+			path = AmakenChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 19A449BB1DED5FCD004E72D0 /* Project object */;
+}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="16A323" minimumToolsVersion="Xcode 7.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="ACCardEntity" representedClassName="ACCardEntity" syncable="YES">
+        <attribute name="cardTypeId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="promotionCard" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ACPromotionCardEntity" syncable="YES"/>
+        <relationship name="userCard" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ACUserCardEntity" syncable="YES"/>
+        <relationship name="welcomeCard" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ACWelcomeCardEntity" syncable="YES"/>
+    </entity>
+    <entity name="ACContentEntity" representedClassName="ACContentEntity" syncable="YES">
+        <attribute name="fileHeight" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="fileType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="fileUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileWidth" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailHeight" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="thumbnailWidth" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="ACPromotionCardEntity" representedClassName="ACPromotionCardEntity" syncable="YES">
+        <attribute name="actionColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="actionText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="actionType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="addedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addedDateColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bodyText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bodyTextAlign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bodyTextBold" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="bodyTextColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="canComment" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="canLike" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="canView" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cardLogo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelNameAlign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelNameColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelNo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="channelNoAlign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelNoColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentsCount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="footerHelpCommand" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="headText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="headTextAlign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="headTextBold" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="headTextColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="likeCount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="moreColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="moreText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="otherId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="promotionId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="serviceTypeCategoryID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="serviceTypeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="showAction" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="showComments" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="showFooter" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="showHelpIcon" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="showLikes" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="showMore" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="showViews" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="viewersCount" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ACContentEntity" syncable="YES"/>
+    </entity>
+    <entity name="ACUserCardEntity" representedClassName="ACUserCardEntity" syncable="YES">
+        <attribute name="addedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addedDateColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageTextAlign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageTextBody" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageTextBold" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="messageTextColor" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ACWelcomeCardEntity" representedClassName="ACWelcomeCardEntity" syncable="YES">
+        <attribute name="addedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addedDateColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bodyText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bodyTextAlign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bodyTextBold" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="bodyTextColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardLogo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelNameAlign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelNameColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelNoAlign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelNoColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="footerHelpCommand" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="headText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="headTextAlign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="headTextBold" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="headTextColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceNo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="serviceShortCodeNo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="serviceTypeCategoryId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="serviceTypeId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sharingText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shortCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="showFooter" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="showHelpIcon" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="contents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ACContentEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ACCardEntity" positionX="-45" positionY="0" width="128" height="120"/>
+        <element name="ACContentEntity" positionX="9" positionY="189" width="128" height="150"/>
+        <element name="ACPromotionCardEntity" positionX="430" positionY="180" width="128" height="660"/>
+        <element name="ACUserCardEntity" positionX="-234" positionY="153" width="128" height="135"/>
+        <element name="ACWelcomeCardEntity" positionX="-441" positionY="126" width="128" height="450"/>
+    </elements>
+</model>
